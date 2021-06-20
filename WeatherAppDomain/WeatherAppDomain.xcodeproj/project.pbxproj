@@ -11,6 +11,9 @@
 		9CAE977E267F144500B7D136 /* WeatherAppDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE977D267F144500B7D136 /* WeatherAppDomainTests.swift */; };
 		9CAE9780267F144500B7D136 /* WeatherAppDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE9772267F144500B7D136 /* WeatherAppDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CAE97D3267F14F200B7D136 /* CityWeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */; };
+		9CAE97D5267F185600B7D136 /* CityWeatherDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97D4267F185600B7D136 /* CityWeatherDomainRepoInterface.swift */; };
+		9CAE97D8267F18BC00B7D136 /* WeatherAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97D7267F18BC00B7D136 /* WeatherAppError.swift */; };
+		9CAE97DA267F18FD00B7D136 /* CityWeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97D9267F18FD00B7D136 /* CityWeatherInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		9CAE977D267F144500B7D136 /* WeatherAppDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppDomainTests.swift; sourceTree = "<group>"; };
 		9CAE977F267F144500B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherEntity.swift; sourceTree = "<group>"; };
+		9CAE97D4267F185600B7D136 /* CityWeatherDomainRepoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherDomainRepoInterface.swift; sourceTree = "<group>"; };
+		9CAE97D7267F18BC00B7D136 /* WeatherAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppError.swift; sourceTree = "<group>"; };
+		9CAE97D9267F18FD00B7D136 /* CityWeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		9CAE9771267F144500B7D136 /* WeatherAppDomain */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE97D6267F18AC00B7D136 /* SupportingFiles */,
 				9CAE97D1267F14CC00B7D136 /* CityWeather */,
 				9CAE9772267F144500B7D136 /* WeatherAppDomain.h */,
 				9CAE9773267F144500B7D136 /* Info.plist */,
@@ -93,8 +100,18 @@
 			isa = PBXGroup;
 			children = (
 				9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */,
+				9CAE97D4267F185600B7D136 /* CityWeatherDomainRepoInterface.swift */,
+				9CAE97D9267F18FD00B7D136 /* CityWeatherInteractor.swift */,
 			);
 			path = CityWeather;
+			sourceTree = "<group>";
+		};
+		9CAE97D6267F18AC00B7D136 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97D7267F18BC00B7D136 /* WeatherAppError.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CAE97D3267F14F200B7D136 /* CityWeatherEntity.swift in Sources */,
+				9CAE97D8267F18BC00B7D136 /* WeatherAppError.swift in Sources */,
+				9CAE97DA267F18FD00B7D136 /* CityWeatherInteractor.swift in Sources */,
+				9CAE97D5267F185600B7D136 /* CityWeatherDomainRepoInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
