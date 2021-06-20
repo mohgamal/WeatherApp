@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:WeatherApp/WeatherApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeatherAppPresentation/WeatherAppPresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeatherAppData/WeatherAppData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WeatherAppDomain/WeatherAppDomain.xcodeproj">
+   </FileRef>
+</Workspace>
