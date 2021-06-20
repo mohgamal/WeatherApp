@@ -38,10 +38,10 @@ public struct CityWeatherEntity: Codable {
     }
     
     public struct ParentEntity : Codable {
-        let title : String?
-        let location_type : String?
-        let woeid : Int?
-        let latt_long : String?
+        public let title : String?
+        public let location_type : String?
+        public let woeid : Int?
+        public let latt_long : String?
         
         public init (title: String?, location_type: String?, woeid: Int?, latt_long: String?) {
             self.title = title
@@ -52,10 +52,10 @@ public struct CityWeatherEntity: Codable {
     }
     
     public struct SourcesEntity : Codable {
-        let title : String?
-        let slug : String?
-        let url : String?
-        let crawl_rate : Int?
+        public let title : String?
+        public let slug : String?
+        public let url : String?
+        public let crawl_rate : Int?
         
         public init (title : String?, slug : String?, url : String?, crawl_rate : Int?) {
             self.title = title
@@ -66,21 +66,21 @@ public struct CityWeatherEntity: Codable {
     }
     
     public struct ConsolidatedWeatherEntity: Codable {
-        let id : Int?
-        let weather_state_name : String?
-        let weather_state_abbr : String?
-        let wind_direction_compass : String?
-        let created : String?
-        let applicable_date : String?
-        let min_temp : Double?
-        let max_temp : Double?
-        let the_temp : Double?
-        let wind_speed : Double?
-        let wind_direction : Double?
-        let air_pressure : Double?
-        let humidity : Int?
-        let visibility : Double?
-        let predictability : Int?
+        public let id : Int?
+        public let weather_state_name : String?
+        public let weather_state_abbr : String?
+        public let wind_direction_compass : String?
+        public let created : String?
+        public let applicable_date : String?
+        public let min_temp : Double?
+        public let max_temp : Double?
+        public let the_temp : Double?
+        public let wind_speed : Double?
+        public let wind_direction : Double?
+        public let air_pressure : Double?
+        public let humidity : Int?
+        public let visibility : Double?
+        public let predictability : Int?
         
         public init (id : Int?, weather_state_name : String?, weather_state_abbr : String?, wind_direction_compass : String?, created : String?,
                      applicable_date : String?, min_temp : Double?, max_temp : Double?, the_temp : Double?, wind_speed : Double?, wind_direction : Double?,
