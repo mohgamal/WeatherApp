@@ -10,6 +10,9 @@
 		9CAE979D267F145600B7D136 /* WeatherAppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE9793267F145600B7D136 /* WeatherAppData.framework */; };
 		9CAE97A2267F145600B7D136 /* WeatherAppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97A1267F145600B7D136 /* WeatherAppDataTests.swift */; };
 		9CAE97A4267F145600B7D136 /* WeatherAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE9796267F145600B7D136 /* WeatherAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CAE97DD267F19E800B7D136 /* CityWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */; };
+		9CAE97E0267F1AD600B7D136 /* WeatherAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */; };
+		9CAE97E1267F1AD600B7D136 /* WeatherAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9CAE97E2267F1AD700B7D136 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CAE97E1267F1AD600B7D136 /* WeatherAppDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9CAE9793267F145600B7D136 /* WeatherAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE9796267F145600B7D136 /* WeatherAppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAppData.h; sourceTree = "<group>"; };
@@ -29,6 +46,8 @@
 		9CAE979C267F145600B7D136 /* WeatherAppDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE97A1267F145600B7D136 /* WeatherAppDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppDataTests.swift; sourceTree = "<group>"; };
 		9CAE97A3267F145600B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherModel.swift; sourceTree = "<group>"; };
+		9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAE97E0267F1AD600B7D136 /* WeatherAppDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,7 @@
 				9CAE9795267F145600B7D136 /* WeatherAppData */,
 				9CAE97A0267F145600B7D136 /* WeatherAppDataTests */,
 				9CAE9794267F145600B7D136 /* Products */,
+				9CAE97DE267F1AD600B7D136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +92,7 @@
 		9CAE9795267F145600B7D136 /* WeatherAppData */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE97DB267F19DA00B7D136 /* CityWeather */,
 				9CAE9796267F145600B7D136 /* WeatherAppData.h */,
 				9CAE9797267F145600B7D136 /* Info.plist */,
 			);
@@ -84,6 +106,22 @@
 				9CAE97A3267F145600B7D136 /* Info.plist */,
 			);
 			path = WeatherAppDataTests;
+			sourceTree = "<group>";
+		};
+		9CAE97DB267F19DA00B7D136 /* CityWeather */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */,
+			);
+			path = CityWeather;
+			sourceTree = "<group>";
+		};
+		9CAE97DE267F1AD600B7D136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +146,7 @@
 				9CAE978F267F145600B7D136 /* Sources */,
 				9CAE9790267F145600B7D136 /* Frameworks */,
 				9CAE9791267F145600B7D136 /* Resources */,
+				9CAE97E2267F1AD700B7D136 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +186,7 @@
 				TargetAttributes = {
 					9CAE9792267F145600B7D136 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					9CAE979B267F145600B7D136 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAE97DD267F19E800B7D136 /* CityWeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +382,7 @@
 		9CAE97A8267F145600B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -357,6 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohabdelaty.WeatherAppData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +408,7 @@
 		9CAE97A9267F145600B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -389,6 +433,7 @@
 		9CAE97AB267F145600B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppDataTests/Info.plist;
@@ -407,6 +452,7 @@
 		9CAE97AC267F145600B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppDataTests/Info.plist;
