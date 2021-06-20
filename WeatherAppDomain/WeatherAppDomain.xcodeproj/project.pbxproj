@@ -10,6 +10,7 @@
 		9CAE9779267F144500B7D136 /* WeatherAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE976F267F144500B7D136 /* WeatherAppDomain.framework */; };
 		9CAE977E267F144500B7D136 /* WeatherAppDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE977D267F144500B7D136 /* WeatherAppDomainTests.swift */; };
 		9CAE9780267F144500B7D136 /* WeatherAppDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE9772267F144500B7D136 /* WeatherAppDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CAE97D3267F14F200B7D136 /* CityWeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9CAE9778267F144500B7D136 /* WeatherAppDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE977D267F144500B7D136 /* WeatherAppDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppDomainTests.swift; sourceTree = "<group>"; };
 		9CAE977F267F144500B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		9CAE9771267F144500B7D136 /* WeatherAppDomain */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE97D1267F14CC00B7D136 /* CityWeather */,
 				9CAE9772267F144500B7D136 /* WeatherAppDomain.h */,
 				9CAE9773267F144500B7D136 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				9CAE977F267F144500B7D136 /* Info.plist */,
 			);
 			path = WeatherAppDomainTests;
+			sourceTree = "<group>";
+		};
+		9CAE97D1267F14CC00B7D136 /* CityWeather */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97D2267F14F200B7D136 /* CityWeatherEntity.swift */,
+			);
+			path = CityWeather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 				TargetAttributes = {
 					9CAE976E267F144500B7D136 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					9CAE9777267F144500B7D136 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAE97D3267F14F200B7D136 /* CityWeatherEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		9CAE9784267F144500B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohabdelaty.WeatherAppDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +380,7 @@
 		9CAE9785267F144500B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -389,6 +405,7 @@
 		9CAE9787267F144500B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppDomainTests/Info.plist;
@@ -407,6 +424,7 @@
 		9CAE9788267F144500B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppDomainTests/Info.plist;
