@@ -13,6 +13,7 @@
 		9CAE97DD267F19E800B7D136 /* CityWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */; };
 		9CAE97E0267F1AD600B7D136 /* WeatherAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */; };
 		9CAE97E1267F1AD600B7D136 /* WeatherAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CAE97E9267F1D3900B7D136 /* CityWeatherRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97E8267F1D3900B7D136 /* CityWeatherRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9CAE97A3267F145600B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherModel.swift; sourceTree = "<group>"; };
 		9CAE97DF267F1AD600B7D136 /* WeatherAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAE97E8267F1D3900B7D136 /* CityWeatherRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9CAE97DC267F19E800B7D136 /* CityWeatherModel.swift */,
+				9CAE97E8267F1D3900B7D136 /* CityWeatherRemoteDataSource.swift */,
 			);
 			path = CityWeather;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAE97E9267F1D3900B7D136 /* CityWeatherRemoteDataSource.swift in Sources */,
 				9CAE97DD267F19E800B7D136 /* CityWeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
