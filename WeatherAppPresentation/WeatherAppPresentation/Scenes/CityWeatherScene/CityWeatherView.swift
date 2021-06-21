@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class CityWeatherView: UIViewController {
+public class CityWeatherView: UIViewController {
     
     public let cityWeatherVM: CityWeatherVM
     private var cancellable: AnyCancellable?
@@ -16,13 +16,11 @@ class CityWeatherView: UIViewController {
     private var cancellables: Set<AnyCancellable> = []
     
     var appDI: AppDIInterface
-    var coordinator: Coordinator
     public var spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     
-    public init(appDI: AppDIInterface, cityWeatherVM: CityWeatherVM, coordinator: Coordinator) {
+    public init(appDI: AppDIInterface, cityWeatherVM: CityWeatherVM) {
         self.appDI = appDI
         self.cityWeatherVM = cityWeatherVM
-        self.coordinator = coordinator
         super.init(nibName: "CityWeatherView", bundle: Bundle(for: CityWeatherView.self))
     }
     
@@ -30,7 +28,7 @@ class CityWeatherView: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         updateUI()
