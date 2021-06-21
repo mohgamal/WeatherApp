@@ -28,10 +28,12 @@ class WeatherCell: UICollectionViewCell {
         self.degreeLabel.text = "\(Int(weather?.the_temp ?? 0))°C"
         
         ImageDownloader.shared.downloadImage(with: "https://www.metaweather.com/static/img/weather/png/64/\(weather?.weather_state_abbr ?? "").png", completionHandler: { (image, result) in
-            self.statusImage.image = image
+            DispatchQueue.main.async {
+                self.statusImage.image = image
+                self.statusImage.contentMode = .scaleToFill
+            }
+            
         }, placeholderImage: UIImage(named: "default-image"))
-        
-        self.statusImage.contentMode = .scaleToFill
     }
     
 }
