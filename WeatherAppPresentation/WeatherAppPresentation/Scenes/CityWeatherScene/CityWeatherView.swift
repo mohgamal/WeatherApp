@@ -8,7 +8,11 @@
 import UIKit
 import Combine
 
-public class CityWeatherView: UIViewController {
+protocol ModalDelegate {
+    func changeCity(value: Int)
+}
+
+public class CityWeatherView: UIViewController, ModalDelegate {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
@@ -27,6 +31,8 @@ public class CityWeatherView: UIViewController {
     
     public let cityWeatherVM: CityWeatherVM
     private var cancellable: AnyCancellable?
+    
+    var cityWoeid = 839722
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -66,16 +72,15 @@ public class CityWeatherView: UIViewController {
         self.nextDaysCollectionView.delegate = self
         
         self.nextDaysCollectionView.register(UINib(nibName: "WeatherCell", bundle: Bundle(for: WeatherCell.self)), forCellWithReuseIdentifier: WeatherCell.cellIdentifier)
-
+        
     }
     
     private func bindViewModel() {
-        self.cityWeatherVM.getCityWeatherData(by: 839722)
+        self.cityWeatherVM.getCityWeatherData(by: cityWoeid)
         cityWeatherVM.objectWillChange.sink { [weak self] in
             guard let self = self else {
                 return
             }
-            
             self.spinner.stopAnimating()
             
             if self.cityWeatherVM.error != nil {
@@ -92,7 +97,6 @@ public class CityWeatherView: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
     
     func updateUIElements() {
         
@@ -120,7 +124,7 @@ public class CityWeatherView: UIViewController {
     }
     
     public func addSpinner() {
-        spinner.color = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        spinner.color = #colorLiteral(red: 0, green: 0.6747083599, blue: 0.89, alpha: 1)
         spinner.translatesAutoresizingMaskIntoConstraints = false
         spinner.startAnimating()
         view.addSubview(spinner)
@@ -129,4 +133,16 @@ public class CityWeatherView: UIViewController {
         spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
+    func changeCity(value: Int) {
+        self.cityWoeid = value
+        addSpinner()
+        self.bindViewModel()
+    }
+    
+    @IBAction func chooseCityButtonPressed(_ sender: Any) {
+        let cityListView = CityListView()
+        cityListView.modalPresentationStyle = .overCurrentContext
+        cityListView.cityWeatherViewDelegate = self
+        present(cityListView, animated: true, completion: nil)
+    }
 }
