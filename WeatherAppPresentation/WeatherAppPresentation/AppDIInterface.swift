@@ -6,5 +6,5 @@
 //
 
 public protocol AppDIInterface {
-    func newsSearchDependencies() -> CityWeatherVM
+    func cityWeatherDependencies() -> CityWeatherVM
 }
