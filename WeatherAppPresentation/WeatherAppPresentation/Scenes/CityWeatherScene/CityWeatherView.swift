@@ -21,6 +21,7 @@ public class CityWeatherView: UIViewController {
     @IBOutlet weak var airPressureLabel: UILabel!
     @IBOutlet weak var newxtDaysView: UIView!
     @IBOutlet weak var dgreeStatusView: UIView!
+    @IBOutlet weak var nextDaysCollectionView: UICollectionView!
     
     
     
@@ -60,6 +61,11 @@ public class CityWeatherView: UIViewController {
         self.containerView.backgroundColor = UIColor.clear
         
         self.newxtDaysView.roundCorners(corners: [.topLeft, .topRight], radius: 40)
+        
+        self.nextDaysCollectionView.dataSource = self
+        self.nextDaysCollectionView.delegate = self
+        
+        self.nextDaysCollectionView.register(UINib(nibName: "WeatherCell", bundle: Bundle(for: WeatherCell.self)), forCellWithReuseIdentifier: WeatherCell.cellIdentifier)
 
     }
     
@@ -104,7 +110,7 @@ public class CityWeatherView: UIViewController {
             }, placeholderImage: UIImage(named: "default-image"))
             
             self.statusImage.contentMode = .scaleToFill
-            
+            self.nextDaysCollectionView.reloadData()
         }
     }
     

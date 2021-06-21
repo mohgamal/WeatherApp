@@ -30,6 +30,7 @@
                 <outlet property="dgreeStatusView" destination="kIK-2Z-nJQ" id="9bR-bj-JBa"/>
                 <outlet property="humadityLabel" destination="pzB-dr-p7X" id="Eua-9S-NSF"/>
                 <outlet property="newxtDaysView" destination="96I-Vt-ATj" id="3nf-Xt-Yeb"/>
+                <outlet property="nextDaysCollectionView" destination="dya-hY-Ms5" id="3bj-hx-gHN"/>
                 <outlet property="statusImage" destination="ABN-ls-l7h" id="AGj-qR-3D3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="visibilityLabel" destination="KNg-Ed-9T1" id="yaU-Oq-rWV"/>
@@ -190,13 +191,17 @@
                                     </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96I-Vt-ATj">
-                                    <rect key="frame" x="0.0" y="650" width="428" height="250"/>
+                                    <rect key="frame" x="0.0" y="610" width="428" height="290"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dya-hY-Ms5">
-                                            <rect key="frame" x="20" y="70" width="388" height="170"/>
+                                            <rect key="frame" x="20" y="60" width="388" height="150"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Onb-IP-ONr">
-                                                <size key="itemSize" width="128" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="150" id="ySN-Hv-8NH"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Onb-IP-ONr">
+                                                <size key="itemSize" width="120" height="120"/>
+                                                <size key="estimatedItemSize" width="120" height="120"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -214,11 +219,9 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="250" id="01I-48-Xvr"/>
                                         <constraint firstItem="ReN-FU-xue" firstAttribute="top" secondItem="96I-Vt-ATj" secondAttribute="top" constant="10" id="0GY-Tj-d4a"/>
-                                        <constraint firstItem="dya-hY-Ms5" firstAttribute="top" secondItem="ReN-FU-xue" secondAttribute="bottom" constant="20" id="0Qb-n7-CTy"/>
+                                        <constraint firstItem="dya-hY-Ms5" firstAttribute="top" secondItem="ReN-FU-xue" secondAttribute="bottom" constant="10" id="0Qb-n7-CTy"/>
                                         <constraint firstAttribute="trailing" secondItem="ReN-FU-xue" secondAttribute="trailing" constant="20" id="1v5-X7-KVO"/>
-                                        <constraint firstAttribute="bottom" secondItem="dya-hY-Ms5" secondAttribute="bottom" constant="10" id="3jR-TW-S8a"/>
                                         <constraint firstItem="ReN-FU-xue" firstAttribute="leading" secondItem="96I-Vt-ATj" secondAttribute="leading" constant="20" id="Mln-iR-u9P"/>
                                         <constraint firstAttribute="trailing" secondItem="dya-hY-Ms5" secondAttribute="trailing" constant="20" id="g5p-Jr-9Y2"/>
                                         <constraint firstItem="dya-hY-Ms5" firstAttribute="leading" secondItem="96I-Vt-ATj" secondAttribute="leading" constant="20" id="xS4-Oa-zaC"/>
@@ -231,8 +234,9 @@
                                 <constraint firstAttribute="trailing" secondItem="e6O-lk-40s" secondAttribute="trailing" id="5Nl-gP-cb2"/>
                                 <constraint firstAttribute="height" constant="900" id="8zv-6o-Kag"/>
                                 <constraint firstItem="96I-Vt-ATj" firstAttribute="leading" secondItem="Z0O-mp-Ce9" secondAttribute="leading" id="EVq-x2-udw"/>
-                                <constraint firstAttribute="bottom" secondItem="96I-Vt-ATj" secondAttribute="bottom" id="F5J-J5-zGm"/>
+                                <constraint firstAttribute="bottom" secondItem="96I-Vt-ATj" secondAttribute="bottom" id="H8d-2z-ghq"/>
                                 <constraint firstAttribute="trailing" secondItem="96I-Vt-ATj" secondAttribute="trailing" id="YfG-JX-pGG"/>
+                                <constraint firstItem="96I-Vt-ATj" firstAttribute="top" secondItem="e6O-lk-40s" secondAttribute="bottom" constant="50" id="ace-gF-krH"/>
                                 <constraint firstItem="e6O-lk-40s" firstAttribute="top" secondItem="Z0O-mp-Ce9" secondAttribute="top" constant="60" id="xcX-Rs-a0r"/>
                             </constraints>
                         </view>
