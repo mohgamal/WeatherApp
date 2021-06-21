@@ -16,6 +16,7 @@
 		9C8C212A268065A80031F4C0 /* CityWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C2129268065A80031F4C0 /* CityWeatherVM.swift */; };
 		9C8C212C268066F60031F4C0 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212B268066F60031F4C0 /* AppDIInterface.swift */; };
 		9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */; };
+		9C8C214826807E4E0031F4C0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C214726807E4E0031F4C0 /* ImageDownloader.swift */; };
 		9CAE97C1267F146C00B7D136 /* WeatherAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */; };
 		9CAE97C6267F146C00B7D136 /* WeatherAppPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97C5267F146C00B7D136 /* WeatherAppPresentationTests.swift */; };
 		9CAE97C8267F146C00B7D136 /* WeatherAppPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +60,7 @@
 		9C8C2129268065A80031F4C0 /* CityWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherVM.swift; sourceTree = "<group>"; };
 		9C8C212B268066F60031F4C0 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
 		9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorInterface.swift; sourceTree = "<group>"; };
+		9C8C214726807E4E0031F4C0 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherAppPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAppPresentation.h; sourceTree = "<group>"; };
 		9CAE97BB267F146C00B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,9 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				9C476D9A267F9F6800926335 /* Fonts */,
-				9C476D9B267F9F8900926335 /* Montserrat-Bold.ttf */,
-				9C476D9D267F9F8900926335 /* Montserrat-Light.ttf */,
-				9C476D9C267F9F8900926335 /* Montserrat-Regular.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -104,6 +103,9 @@
 		9C476D9A267F9F6800926335 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				9C476D9B267F9F8900926335 /* Montserrat-Bold.ttf */,
+				9C476D9D267F9F8900926335 /* Montserrat-Light.ttf */,
+				9C476D9C267F9F8900926335 /* Montserrat-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9C476DA9267FA04600926335 /* Utils.swift */,
+				9C8C214726807E4E0031F4C0 /* ImageDownloader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				9C476DA3267F9FE900926335 /* CityWeatherView.swift in Sources */,
 				9CAE97F3267F268700B7D136 /* CityCell.swift in Sources */,
+				9C8C214826807E4E0031F4C0 /* ImageDownloader.swift in Sources */,
 				9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */,
 				9C8C212A268065A80031F4C0 /* CityWeatherVM.swift in Sources */,
 				9C476DAA267FA04600926335 /* Utils.swift in Sources */,

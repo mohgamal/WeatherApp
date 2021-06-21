@@ -22,7 +22,7 @@ public class CityWeatherRemoteDataSource: CityWeatherRemoteDataSourceInterface {
     }
     
     public func getCityWeather(by woeid: Int, handler: @escaping (Result<CityWeatherModel, WeatherAppError>) -> Void) {
-        guard let url = URL(string: "\(urlString)/\(woeid)") else {
+        guard let url = URL(string: "\(urlString)\(woeid)/") else {
             handler(.failure(WeatherAppError.NotFound))
             return
         }
@@ -42,15 +42,15 @@ public class CityWeatherRemoteDataSource: CityWeatherRemoteDataSourceInterface {
                 default:
                     handler(.failure(WeatherAppError.InternalServerError))
                 }
-             }
+            }
             
             guard let data = data else {
-              if let error = error {
-                handler(.failure(WeatherAppError.UnknownError(message: error.localizedDescription)))
-              }
-              return
+                if let error = error {
+                    handler(.failure(WeatherAppError.UnknownError(message: error.localizedDescription)))
+                }
+                return
             }
-
+            
             let decoder = JSONDecoder()
             
             do {
