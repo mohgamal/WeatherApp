@@ -58,6 +58,9 @@ public class CityWeatherView: UIViewController {
         gradientLayer.frame = self.view.bounds
         self.view.layer.insertSublayer(gradientLayer, at:0)
         self.containerView.backgroundColor = UIColor.clear
+        
+        self.newxtDaysView.roundCorners(corners: [.topLeft, .topRight], radius: 40)
+
     }
     
     private func bindViewModel() {

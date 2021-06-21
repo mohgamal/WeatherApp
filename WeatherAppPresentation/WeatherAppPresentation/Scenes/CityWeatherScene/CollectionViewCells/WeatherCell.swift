@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CityCell: UICollectionViewCell {
+class WeatherCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -17,13 +17,14 @@
 		9C8C212C268066F60031F4C0 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212B268066F60031F4C0 /* AppDIInterface.swift */; };
 		9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */; };
 		9C8C214826807E4E0031F4C0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C214726807E4E0031F4C0 /* ImageDownloader.swift */; };
+		9C8C214A268093670031F4C0 /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C2149268093670031F4C0 /* UIView+Rounded.swift */; };
 		9CAE97C1267F146C00B7D136 /* WeatherAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */; };
 		9CAE97C6267F146C00B7D136 /* WeatherAppPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97C5267F146C00B7D136 /* WeatherAppPresentationTests.swift */; };
 		9CAE97C8267F146C00B7D136 /* WeatherAppPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CAE97E5267F1ADF00B7D136 /* WeatherAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */; };
 		9CAE97E6267F1ADF00B7D136 /* WeatherAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CAE97F3267F268700B7D136 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97F1267F268700B7D136 /* CityCell.swift */; };
-		9CAE97F4267F268700B7D136 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE97F2267F268700B7D136 /* CityCell.xib */; };
+		9CAE97F3267F268700B7D136 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97F1267F268700B7D136 /* WeatherCell.swift */; };
+		9CAE97F4267F268700B7D136 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE97F2267F268700B7D136 /* WeatherCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9C8C212B268066F60031F4C0 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
 		9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorInterface.swift; sourceTree = "<group>"; };
 		9C8C214726807E4E0031F4C0 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		9C8C2149268093670031F4C0 /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
 		9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherAppPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAppPresentation.h; sourceTree = "<group>"; };
 		9CAE97BB267F146C00B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +70,8 @@
 		9CAE97C5267F146C00B7D136 /* WeatherAppPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppPresentationTests.swift; sourceTree = "<group>"; };
 		9CAE97C7267F146C00B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CAE97F1267F268700B7D136 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
-		9CAE97F2267F268700B7D136 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		9CAE97F1267F268700B7D136 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		9CAE97F2267F268700B7D136 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		9C476DA6267FA01C00926335 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9C8C2149268093670031F4C0 /* UIView+Rounded.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,8 +202,8 @@
 		9CAE97F0267F266400B7D136 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				9CAE97F1267F268700B7D136 /* CityCell.swift */,
-				9CAE97F2267F268700B7D136 /* CityCell.xib */,
+				9CAE97F1267F268700B7D136 /* WeatherCell.swift */,
+				9CAE97F2267F268700B7D136 /* WeatherCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 				9C476DA4267F9FE900926335 /* CityWeatherView.xib in Resources */,
 				9C476D9F267F9F8900926335 /* Montserrat-Regular.ttf in Resources */,
 				9C476D9E267F9F8900926335 /* Montserrat-Bold.ttf in Resources */,
-				9CAE97F4267F268700B7D136 /* CityCell.xib in Resources */,
+				9CAE97F4267F268700B7D136 /* WeatherCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C476DA3267F9FE900926335 /* CityWeatherView.swift in Sources */,
-				9CAE97F3267F268700B7D136 /* CityCell.swift in Sources */,
+				9CAE97F3267F268700B7D136 /* WeatherCell.swift in Sources */,
 				9C8C214826807E4E0031F4C0 /* ImageDownloader.swift in Sources */,
 				9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */,
+				9C8C214A268093670031F4C0 /* UIView+Rounded.swift in Sources */,
 				9C8C212A268065A80031F4C0 /* CityWeatherVM.swift in Sources */,
 				9C476DAA267FA04600926335 /* Utils.swift in Sources */,
 				9C8C212C268066F60031F4C0 /* AppDIInterface.swift in Sources */,
