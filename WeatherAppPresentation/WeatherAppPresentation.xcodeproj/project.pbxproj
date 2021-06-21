@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C476D9E267F9F8900926335 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C476D9B267F9F8900926335 /* Montserrat-Bold.ttf */; };
+		9C476D9F267F9F8900926335 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C476D9C267F9F8900926335 /* Montserrat-Regular.ttf */; };
+		9C476DA0267F9F8900926335 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C476D9D267F9F8900926335 /* Montserrat-Light.ttf */; };
+		9C476DA3267F9FE900926335 /* CityWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C476DA1267F9FE900926335 /* CityWeatherView.swift */; };
+		9C476DA4267F9FE900926335 /* CityWeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C476DA2267F9FE900926335 /* CityWeatherView.xib */; };
+		9C476DAA267FA04600926335 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C476DA9267FA04600926335 /* Utils.swift */; };
+		9C8C212A268065A80031F4C0 /* CityWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C2129268065A80031F4C0 /* CityWeatherVM.swift */; };
+		9C8C212C268066F60031F4C0 /* AppDIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212B268066F60031F4C0 /* AppDIInterface.swift */; };
+		9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */; };
 		9CAE97C1267F146C00B7D136 /* WeatherAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */; };
 		9CAE97C6267F146C00B7D136 /* WeatherAppPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97C5267F146C00B7D136 /* WeatherAppPresentationTests.swift */; };
 		9CAE97C8267F146C00B7D136 /* WeatherAppPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CAE97E5267F1ADF00B7D136 /* WeatherAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */; };
 		9CAE97E6267F1ADF00B7D136 /* WeatherAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CAE97F3267F268700B7D136 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE97F1267F268700B7D136 /* CityCell.swift */; };
+		9CAE97F4267F268700B7D136 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CAE97F2267F268700B7D136 /* CityCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +50,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C476D9B267F9F8900926335 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		9C476D9C267F9F8900926335 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		9C476D9D267F9F8900926335 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		9C476DA1267F9FE900926335 /* CityWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherView.swift; sourceTree = "<group>"; };
+		9C476DA2267F9FE900926335 /* CityWeatherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityWeatherView.xib; sourceTree = "<group>"; };
+		9C476DA9267FA04600926335 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9C8C2129268065A80031F4C0 /* CityWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherVM.swift; sourceTree = "<group>"; };
+		9C8C212B268066F60031F4C0 /* AppDIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIInterface.swift; sourceTree = "<group>"; };
+		9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorInterface.swift; sourceTree = "<group>"; };
 		9CAE97B7267F146C00B7D136 /* WeatherAppPresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherAppPresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherAppPresentation.h; sourceTree = "<group>"; };
 		9CAE97BB267F146C00B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +66,8 @@
 		9CAE97C5267F146C00B7D136 /* WeatherAppPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppPresentationTests.swift; sourceTree = "<group>"; };
 		9CAE97C7267F146C00B7D136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeatherAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAE97F1267F268700B7D136 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		9CAE97F2267F268700B7D136 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +90,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C476D99267F9F5F00926335 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C476D9A267F9F6800926335 /* Fonts */,
+				9C476D9B267F9F8900926335 /* Montserrat-Bold.ttf */,
+				9C476D9D267F9F8900926335 /* Montserrat-Light.ttf */,
+				9C476D9C267F9F8900926335 /* Montserrat-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C476D9A267F9F6800926335 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9C476DA5267FA01600926335 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C476DA9267FA04600926335 /* Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C476DA6267FA01C00926335 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9CAE97AD267F146B00B7D136 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +145,12 @@
 		9CAE97B9267F146C00B7D136 /* WeatherAppPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				9C8C212B268066F60031F4C0 /* AppDIInterface.swift */,
+				9C8C212D2680672A0031F4C0 /* CoordinatorInterface.swift */,
+				9C476DA6267FA01C00926335 /* Extensions */,
+				9C476DA5267FA01600926335 /* Helpers */,
+				9C476D99267F9F5F00926335 /* Resources */,
+				9CAE97EC267F1F2100B7D136 /* Scenes */,
 				9CAE97BA267F146C00B7D136 /* WeatherAppPresentation.h */,
 				9CAE97BB267F146C00B7D136 /* Info.plist */,
 			);
@@ -111,6 +172,34 @@
 				9CAE97E4267F1ADF00B7D136 /* WeatherAppDomain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CAE97EC267F1F2100B7D136 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97EF267F1F3C00B7D136 /* CityWeatherScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9CAE97EF267F1F3C00B7D136 /* CityWeatherScene */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97F0267F266400B7D136 /* CollectionViewCells */,
+				9C476DA1267F9FE900926335 /* CityWeatherView.swift */,
+				9C476DA2267F9FE900926335 /* CityWeatherView.xib */,
+				9C8C2129268065A80031F4C0 /* CityWeatherVM.swift */,
+			);
+			path = CityWeatherScene;
+			sourceTree = "<group>";
+		};
+		9CAE97F0267F266400B7D136 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9CAE97F1267F268700B7D136 /* CityCell.swift */,
+				9CAE97F2267F268700B7D136 /* CityCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +264,7 @@
 				TargetAttributes = {
 					9CAE97B6267F146C00B7D136 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					9CAE97BF267F146C00B7D136 = {
 						CreatedOnToolsVersion = 12.5;
@@ -205,6 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C476DA0267F9F8900926335 /* Montserrat-Light.ttf in Resources */,
+				9C476DA4267F9FE900926335 /* CityWeatherView.xib in Resources */,
+				9C476D9F267F9F8900926335 /* Montserrat-Regular.ttf in Resources */,
+				9C476D9E267F9F8900926335 /* Montserrat-Bold.ttf in Resources */,
+				9CAE97F4267F268700B7D136 /* CityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C476DA3267F9FE900926335 /* CityWeatherView.swift in Sources */,
+				9CAE97F3267F268700B7D136 /* CityCell.swift in Sources */,
+				9C8C212E2680672A0031F4C0 /* CoordinatorInterface.swift in Sources */,
+				9C8C212A268065A80031F4C0 /* CityWeatherVM.swift in Sources */,
+				9C476DAA267FA04600926335 /* Utils.swift in Sources */,
+				9C8C212C268066F60031F4C0 /* AppDIInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +470,7 @@
 		9CAE97CC267F146C00B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -385,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohabdelaty.WeatherAppPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,6 +496,7 @@
 		9CAE97CD267F146C00B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
@@ -417,6 +521,7 @@
 		9CAE97CF267F146C00B7D136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppPresentationTests/Info.plist;
@@ -435,6 +540,7 @@
 		9CAE97D0267F146C00B7D136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6VRVQTQZ4;
 				INFOPLIST_FILE = WeatherAppPresentationTests/Info.plist;
