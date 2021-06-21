@@ -55,8 +55,9 @@ public class CityWeatherView: UIViewController {
         spinner.startAnimating()
         self.dgreeStatusView.layer.cornerRadius = self.dgreeStatusView.frame.width / 2
         let gradientLayer = Utils().generateGradientLayer()
-        gradientLayer.frame = self.containerView.bounds
-        self.containerView.layer.insertSublayer(gradientLayer, at:0)
+        gradientLayer.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+        self.containerView.backgroundColor = UIColor.clear
     }
     
     private func bindViewModel() {
