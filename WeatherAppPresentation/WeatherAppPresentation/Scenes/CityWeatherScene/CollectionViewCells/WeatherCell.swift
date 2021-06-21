@@ -18,19 +18,11 @@ class WeatherCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func configCell(with weather: CityWeatherEntity.ConsolidatedWeatherEntity?) {
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
-        let date = dateFormatter.date(from: weather?.applicable_date ?? "") ?? nil
-        let weekday = Calendar.current.component(.weekday, from: date ?? Date())
-        
-
-        
-        self.dayNameLabel.text = Calendar.current.weekdaySymbols[weekday]
+        self.dayNameLabel.text = Utils.getWeekDay(from: weather?.applicable_date ?? "")
         
         
         self.degreeLabel.text = "\(Int(weather?.the_temp ?? 0))°C"
@@ -40,13 +32,6 @@ class WeatherCell: UICollectionViewCell {
         }, placeholderImage: UIImage(named: "default-image"))
         
         self.statusImage.contentMode = .scaleToFill
-    }
-    
-    func getTodayWeekDay(date: String)-> String{
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE"
-        let weekDay = dateFormatter.date(from: date)
-        return weekDay?.description ?? ""
     }
     
 }

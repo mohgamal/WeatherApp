@@ -20,4 +20,12 @@ final public class Utils {
         return gradientLayer
     }
     
+    static func getWeekDay(from stringDate: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.date(from: stringDate) 
+        let weekday = Calendar.current.component(.weekday, from: date ?? Date())
+        return Calendar.current.weekdaySymbols[weekday - 1]
+    }
+    
 }

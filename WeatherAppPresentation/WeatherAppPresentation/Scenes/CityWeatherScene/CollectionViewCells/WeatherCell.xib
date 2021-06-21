@@ -56,7 +56,7 @@
                             <constraint firstAttribute="width" constant="80" id="ZbC-32-MYp"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-ez-4mi">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-ez-4mi">
                         <rect key="frame" x="35" y="5" width="50" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="Qwv-bf-XJ6"/>

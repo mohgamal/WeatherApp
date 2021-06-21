@@ -9,12 +9,12 @@ import UIKit
 
 extension CityWeatherView : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.cityWeatherVM.cityWeatherResultEntity?.consolidated_weather?.count ?? 0
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WeatherCell.cellIdentifier, for: indexPath) as? WeatherCell
-        cell?.configCell(with: self.cityWeatherVM.cityWeatherResultEntity?.consolidated_weather?[indexPath.row + 1])
+        cell?.configCell(with: self.cityWeatherVM.cityWeatherResultEntity?.consolidated_weather?[indexPath.row])
         return cell ?? UICollectionViewCell()
     }
     

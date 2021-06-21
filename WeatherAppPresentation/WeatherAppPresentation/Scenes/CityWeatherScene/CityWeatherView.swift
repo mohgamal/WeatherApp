@@ -97,7 +97,12 @@ public class CityWeatherView: UIViewController {
     func updateUIElements() {
         
         if let cityWeatherEntity = cityWeatherVM.cityWeatherResultEntity {
-            self.dateLabel.text = cityWeatherEntity.time
+            let dateFormatterPrint = DateFormatter()
+            dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+            let date: Date = dateFormatterPrint.date(from: cityWeatherEntity.consolidated_weather?[0].applicable_date ?? "") ?? Date()
+            
+            self.dateLabel.text = "Today,\(dateFormatterPrint.string(from: date))"
+            
             self.cityNameLabel.text = cityWeatherEntity.title
             self.degreeLabel.text = "\(Int(cityWeatherEntity.consolidated_weather?[0].the_temp ?? 0))°C"
             self.visibilityLabel.text = "\(Int(cityWeatherEntity.consolidated_weather?[0].visibility ?? 0)) miles"
